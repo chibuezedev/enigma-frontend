@@ -1,4 +1,4 @@
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
+const API = "https://enigma-server-rouge.vercel.app" // || "http://localhost:3001";
 
 export const api = {
   getPrice: () => fetch(`${API}/price`).then((r) => r.json()),
